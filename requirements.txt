@@ -1,0 +1,8 @@
+nltk~=3.5
+numpy~=1.18.4
+pandas~=1.0.4
+pytz~=2020.1
+scipy~=1.4.1
+torch~=1.5.1
+sklearn~=0.0
+scikit-learn~=0.22.2.post1
