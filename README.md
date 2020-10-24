@@ -44,3 +44,11 @@ cache prediction to generate plots
     2. `num_train_epochs`
     3. `weight_decay`
     4. `batch_size`
+
+#### Steps
+1. Add the location of the output directory in the config
+2. Add the location of the corresponding data directories in the config
+3. Choose the model and the data on which analysis is to be performed
+4. Run the experiment using `run_experiment_trainer.py` or `run_experiment_sklearn.py`
+if the model is lstm or roberta and logistic regression or random forest
+respectively.
