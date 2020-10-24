@@ -54,9 +54,9 @@ if the model is lstm or roberta and logistic regression or random forest
 respectively.
 
 #### CITATION
-@inproceedings{carton+rathore+tan:20,
+`@inproceedings{carton+rathore+tan:20,
      author = {Samuel Carton and Anirudh Rathore and Chenhao Tan},
      title = {Evaluating and Characterizing Human Rationales},
      year = {2020},
      booktitle = {Proceedings of EMNLP}
-}
+}`
