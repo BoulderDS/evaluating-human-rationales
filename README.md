@@ -52,3 +52,13 @@ cache prediction to generate plots
 4. Run the experiment using `run_experiment_trainer.py` or `run_experiment_sklearn.py`
 if the model is lstm or roberta and logistic regression or random forest
 respectively.
+
+#### CITATION
+```
+@inproceedings{carton+rathore+tan:20,
+     author = {Samuel Carton and Anirudh Rathore and Chenhao Tan},
+     title = {Evaluating and Characterizing Human Rationales},
+     year = {2020},
+     booktitle = {Proceedings of EMNLP}
+}
+```
