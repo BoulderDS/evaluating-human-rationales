@@ -1,5 +1,5 @@
-from emnlp20.train_eval.feature_caching import get_and_save_features
-from emnlp20.dataset.dataset import create_test_dataloader
+from train_eval.feature_caching import get_and_save_features
+from dataset.dataset import create_test_dataloader
 import os
 
 def create_fidelity_curves(

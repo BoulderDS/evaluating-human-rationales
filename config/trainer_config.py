@@ -1,5 +1,4 @@
 training_args_config = {
-	# "output_dir": "/data/anirudh/output/evaluating_human_rationales/roberta",
 	"overwrite_output_dir": True,
 	"do_train": True,
 	"do_eval": True,
@@ -11,7 +10,7 @@ training_args_config = {
 	"logging_steps": 500,
 	# "num_train_epochs": 5,
 	# "warmup_steps": 50,
-	"logging_dir": "/data/anirudh/output/runs",
+	"logging_dir": "",
 }
 tunable_training_args = {
 
@@ -25,5 +24,6 @@ tunable_training_args = {
 	# "weight_decay": 1e-6
 }
 
-#try packed padded
-# do packing as a hyperparameter set this as true and false and see if it makes a differnce
+
+# try packed padded
+# do packing as a hyper-parameter set this as true and false and see if it makes a difference

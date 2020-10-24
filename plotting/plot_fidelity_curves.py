@@ -6,7 +6,7 @@ import seaborn as sns
 import sklearn.metrics as mt
 import sys
 sys.path.append('../../')
-from emnlp20.fidelity.fidelity import Fidelity
+from fidelity.fidelity import Fidelity
 
 sns.set(font_scale=3.0, rc={
 	"lines.linewidth": 3,

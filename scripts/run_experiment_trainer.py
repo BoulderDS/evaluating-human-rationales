@@ -1,6 +1,6 @@
 import logging
 
-from choose_gpu import choose_and_set_available_gpus
+from util.choose_gpu import choose_and_set_available_gpus
 choose_and_set_available_gpus()
 import sys
 # sys.exit(0)
@@ -9,16 +9,16 @@ from typing import Callable, Dict
 import sklearn.metrics as mt
 import numpy as np
 
-from emnlp20.config import data_config as config
-from emnlp20.dataset.dataset import prepare_data
-from emnlp20.config.trainer_config import training_args_config, tunable_training_args
-from emnlp20.config.model_config import model_dict, model_info
-from emnlp20.util.param_combo import get_param_combos
-from emnlp20.train_eval.feature_caching import get_and_save_features
-from emnlp20.dataset.dataset import create_test_dataloader, create_dataloader
-from emnlp20.train_eval.create_fidelity_curves import create_fidelity_curves
-from emnlp20.train_eval.eval_pytorch import eval_fn
-from emnlp20.util.saving_utils import copy_features
+from config import data_config as config
+from dataset.dataset import prepare_data
+from config.trainer_config import training_args_config, tunable_training_args
+from config.model_config import model_dict, model_info
+from util.param_combo import get_param_combos
+from train_eval.feature_caching import get_and_save_features
+from dataset.dataset import create_test_dataloader, create_dataloader
+from train_eval.create_fidelity_curves import create_fidelity_curves
+from train_eval.eval_pytorch import eval_fn
+from util.saving_utils import copy_features
 
 import os
 import torch

@@ -1,9 +1,8 @@
-from emnlp20.model.roberta_classifier import RobertaClassifier
-from emnlp20.model.lstm_classifier import LSTMClassifier
-from emnlp20.model.sklearn_classifier import RandomForestSKLearnClassifier, LogisticRegressionSKLearnClassifier
+from model.roberta_classifier import RobertaClassifier
+from model.lstm_classifier import LSTMClassifier
+from model.sklearn_classifier import RandomForestSKLearnClassifier, LogisticRegressionSKLearnClassifier
 
-# model_dict = {'model': ["logistic_regression", "random_forest", "roberta"]}
-model_dict = {'model': ["logistic_regression", "random_forest"]}
+model_dict = {'model': ["logistic_regression", "random_forest", "roberta"]}
 
 model_info = {
 	'roberta': {

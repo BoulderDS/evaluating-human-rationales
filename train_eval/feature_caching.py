@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import os
 
-from emnlp20.fidelity import utility
+from fidelity import utility
 import os
 
 

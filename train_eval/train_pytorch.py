@@ -1,7 +1,7 @@
 from transformers import get_linear_schedule_with_warmup
 import numpy as np
 import sklearn.metrics as mt
-from emnlp20.train_eval.eval_pytorch import eval_fn
+from train_eval.eval_pytorch import eval_fn
 import time
 import torch
 from transformers import Trainer, TrainingArguments, EvalPrediction, PretrainedConfig
