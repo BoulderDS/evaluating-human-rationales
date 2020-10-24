@@ -11,16 +11,16 @@ pd.set_option('precision', 3)
 dataset = {
 	"name": "Wikipedia personal attacks",
 	"prefix": "personal_attacks",
-	"train_path": "/data/sam/jigsaw_toxicity/personal_attacks/wiki_attack_train.csv",
-	"dev_path": "/data/sam/jigsaw_toxicity/personal_attacks/wiki_attack_dev.csv",
-	"test_path": "/data/sam/jigsaw_toxicity/personal_attacks/wiki_attack_test.csv",
+	"train_path": "",
+	"dev_path": "",
+	"test_path": "",
 	'classes': [0, 1],
 	'hyperparameters': {
 		'batch_size': 10
 	}
 }
 
-out_dir = "/data/anirudh/wikismall"
+out_dir = ""
 
 seed = 4949
 

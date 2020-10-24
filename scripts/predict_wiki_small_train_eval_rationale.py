@@ -1,13 +1,13 @@
 from transformers import PretrainedConfig
-from emnlp20.model.roberta_classifier import RobertaClassifier
+from model.roberta_classifier import RobertaClassifier
 import json
 import torch
-from emnlp20.dataset.dataset import Dataset
+from dataset.dataset import Dataset
 import os
 import numpy as np
 import pandas as pd
 
-load_path = "/data/anirudh/output/evaluating_human_rationales/roberta/wikismallred/"
+load_path = ""
 model_load_path = os.path.join(load_path, 'pytorch_model.bin')
 with open(os.path.join(load_path, 'config.json'), 'r')as f:
     saved_config = json.load(f)
@@ -17,7 +17,7 @@ cache_model = RobertaClassifier(config=saved_config)
 cache_model.load_state_dict(torch.load(model_load_path))
 
 
-data_df = pd.read_csv("/data/anirudh/rationale_reduced_datasets/wikismall/test_path.csv")
+data_df = pd.read_csv("")
 
 data_df['input_ids'], data_df['attention_mask'] = zip(*data_df['text'].map(cache_model.tokenize))
 

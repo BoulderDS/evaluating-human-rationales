@@ -6,13 +6,13 @@ import numpy as np
 import pandas as pd
 import pickle
 
-from emnlp20.config import data_config as config
-from emnlp20.config.trainer_config import tunable_training_args
-from emnlp20.config.model_config import model_dict, model_info
-from emnlp20.util.param_combo import get_param_combos
-from emnlp20.model.sklearn_classifier import SklearnTokenizer
-from emnlp20.dataset.dataset import create_test_data_sklearn, prepare_data_sklearn
-from emnlp20.fidelity.utility import reduce, compute_fidelity
+from config import data_config as config
+from config.trainer_config import tunable_training_args
+from config.model_config import model_dict, model_info
+from util.param_combo import get_param_combos
+from model.sklearn_classifier import SklearnTokenizer
+from dataset.dataset import create_test_data_sklearn, prepare_data_sklearn
+from fidelity.utility import reduce, compute_fidelity
 import os
 
 logger = logging.getLogger(__name__)

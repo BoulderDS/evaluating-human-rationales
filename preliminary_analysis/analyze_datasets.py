@@ -1,4 +1,4 @@
-from emnlp20.util.putil import iprint, iinc, idec, process_number_sequence_string, ioff, ion
+from util.putil import iprint, iinc, idec, process_number_sequence_string, ioff, ion
 import sys
 import os
 import pandas as pd
@@ -12,7 +12,7 @@ import warnings
 # # Relative import for all_eraser config
 # train_config_path = os.getcwd() + '/../pt_modeling/train_configs/'
 # sys.path.insert(0, train_config_path)
-from emnlp20.config.preliminary_analysis import datasets, output_directory
+from config.preliminary_analysis import datasets, output_directory
 # from all_eraser import datasets, output_directory
 
 from pprint import pformat

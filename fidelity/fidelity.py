@@ -3,7 +3,7 @@ import logging
 import nlp
 import numpy as np
 
-import emnlp20.fidelity.utility as utility
+import fidelity.utility as utility
 
 logger = logging.getLogger(__name__)
 

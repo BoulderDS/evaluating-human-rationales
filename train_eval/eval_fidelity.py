@@ -1,5 +1,5 @@
-from emnlp20.fidelity import fidelity
-from emnlp20.fidelity import utility
+from fidelity import fidelity
+from fidelity import utility
 import numpy as np
 import torch
 

@@ -1,7 +1,7 @@
 import pandas as pd
 pd.set_option("display.precision", 1)
 
-data_df = pd.read_csv("/data/anirudh/output/evaluating_human_rationales/all_stats.csv")
+data_df = pd.read_csv("")
 corr_dataset_dict = {}
 corr_dataset_dict["Wikipedia personal attacks"] = {"abbv": "WikiAttack", "Task type": "Cls", "Granularity": "Token", "Comprehensive": "CHECKMARK", "Class asymmetry": "CHECKMARK"}
 corr_dataset_dict["Stanford treebank"] = {"abbv": "SST", "Task type": "Cls", "Granularity": "Token", "Comprehensive": "CHECKMARK", "Class asymmetry": "CROSSMARK"}
